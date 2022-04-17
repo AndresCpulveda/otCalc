@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>CALCULADOR DE OT</h1>
+
+    <ul style="list-style: none; display: flex; flex-direction: column; gap: 20px;">
+        <li><label for="horas">Ingresa las horas trabajadas<input type="number" id="horas"></label></li>
+        <li><label for="rate">Ingresa el rate de aquellas horas<input type="number" id="rate" placeholder="ejemplo: 40000"></label></li>
+        <li><h4>Si aplica promo ingresa por cada cuantas horas trabajadas se reciben X horas de regalo</h4></li>
+        <li><label for="hechas">Por cada: <input type="number" id="hechas"> horas trabajadas, </label></li>
+        <li><label for="regalo">se me regala: <input type="number" id="regalo"> hora(s) de más</label></li>
+        <li><button onclick="calcOt()">CALCULAR PAGO DE OT</button></li>
+        <li><h2>Por tus horas de OT deberias recibir: <span id="dineroAPagar"></span>$ pesos</h2></li>
+    </ul>
+
+    <script src="./overtimeCalc.js"></script>
+</body>
+</html>
